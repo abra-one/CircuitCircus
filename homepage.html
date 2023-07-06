@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Homepage</title>
+
+  <!-- References -->
+  <link rel="stylesheet" href="barstyle.css">
+
+
   <style>
     /* CSS styles for the layout */
     body {
@@ -16,7 +21,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #dcd6f3;
+      background-color: #360aaf;
 
       position: fixed;
       top: 0;
@@ -24,6 +29,21 @@
       left: 0;
       z-index: 100;
       border-bottom: 1px solid black;
+    }
+
+    .footer {
+      height: 55px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #360aaf;
+
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      border-top: 1px solid black;
     }
 
     .left-section {
@@ -48,31 +68,38 @@
       justify-content: flex-end;
     }
 
-    .search-bar {
-      height: 36px;
-      padding-left: 10px;
-      font-size: 16px;
-      border: 1px solid rgb(192, 192, 192);
-      border-radius: 2px;
-      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-      flex-grow: 1;
-    }
 
-    .search-button {
-      background-color: rgb(161, 114, 172);
-      padding: 10px;
-      color: white;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-    }
 
+    
     .icon-container {
       display: flex;
     }
 
     .icon {
       margin-right: 10px;
+    }
+
+    .title {
+      display: inline-block;
+      border-radius: 20px;
+      background-color: #eaeaea;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .logo {
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #eaeaea;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333333
     }
 
     /* Grid Styles */
@@ -92,6 +119,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      height: 250px;
+      background-color: rgb(250, 249, 239);
     }
 
     .product-image {
@@ -104,6 +133,59 @@
       font-weight: bold;
       text-align: center;
     }
+
+    /* Trim Styles */
+    .trim-right {
+      display: flex;
+      position: fixed;
+      height: 900px;
+      width: 12px;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 50;
+      background-color: darksalmon;
+    }
+
+    .trim-left {
+      display: flex;
+      position: fixed;
+      height: 900px;
+      width: 12px;
+
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 50;
+      background-color: darksalmon;
+    }
+
+    /* Listing Button */
+    .listing-button {
+      display: flex;
+      position: fixed;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      bottom: 70px;
+      right: 20px;
+      z-index: 200;
+      background-color: rgb(78, 120, 238);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .listing-button:hover {
+      background-color: rgb(68, 106, 212);
+    }
+
+    .listing-button:active {
+      background-color: rgb(60, 90, 170);
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+      border: 2px solid rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 
@@ -113,18 +195,22 @@
   <header class="header">
     <!-- Left Icon Div -->
     <div class="left-section">
-      <div class="icon">
+  
+      <div class="title">
         <!-- First icon here -->
-        <img src="icon1.png" alt="Icon 1">
+          Circuit Circus
       </div>
     </div>
 
     <!-- Middle Section Div-->
     <div class="middle-section">
       <div>
-        <input class="search-bar" type="text" placeholder="Search...">
-      </div>
-      <button class="search-button">Search</button>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search Items" name="q">
+            <button type="submit" class="search-bar"><img src="images/images/search.png"></button>
+        </form>
+    </div>
+      
     </div>
 
     <!-- Right Section Div-->
@@ -139,6 +225,16 @@
       </div>
     </div>
   </header>
+
+  <!--Listing Button Circle at bottom-->
+  <button class="listing-button">
+  </butTon>
+
+  <!--Edge trim-->
+  <div class="trim-right">
+  </div>
+  <div class="trim-left">
+  </div>
 
    <!-- Listing Grid -->
    <div class="product-grid">
@@ -174,8 +270,110 @@
       <img class="product-image" src="product2.jpg" alt="Product 2">
       <h3 class="product-title">Product 2 Title</h3>
     </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product1.jpg" alt="Product 1">
+      <h3 class="product-title">Product 1 Title</h3>
+    </div>
+    <div class="product-container">
+      <img class="product-image" src="product2.jpg" alt="Product 2">
+      <h3 class="product-title">Product 2 Title</h3>
+    </div>
     <!-- Add more product containers here -->
   </div>
+
+  <footer>
+      <div class="footer">
+
+      </div>
+  </footer>
 
 </body>
 </html>
