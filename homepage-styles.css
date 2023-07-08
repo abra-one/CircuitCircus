@@ -1,3 +1,5 @@
+
+/* Header styles */
 .header {
   height: 55px;
   display: flex;
@@ -66,4 +68,99 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #333333;
+}
+
+/* CSS styles for the layout */
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+
+/* Grid Styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  margin-top: 70px;
+}
+
+.product-container {
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: rgb(250, 249, 239);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Trim Styles */
+.trim-right {
+  display: flex;
+  position: fixed;
+  height: 900px;
+  width: 12px;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: darksalmon;
+}
+
+.trim-left {
+  display: flex;
+  position: fixed;
+  height: 900px;
+  width: 12px;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: darksalmon;
+}
+
+
+/* Listing Button */
+.listing-button {
+  display: flex;
+  position: fixed;
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  bottom: 70px;
+  right: 20px;
+  z-index: 200;
+  background-color: rgb(78, 120, 238);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.listing-button:hover {
+  background-color: rgb(68, 106, 212);
+}
+
+.listing-button:active {
+  background-color: rgb(60, 90, 170);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }

@@ -1,24 +1,42 @@
+/* Body Styles */
 body {
   background-color: darksalmon;
   color: white;
   font-family: Arial, sans-serif;
 }
 
+/* Button Styles */
+.Cancel-button {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.Cancel-button:hover {
+  background-color: #004080;
+}
+
+/* Heading Styles */
 h1 {
   text-align: center;
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Label Styles */
 label {
   color: darkblue;
   font-weight: bold;
 }
 
+/* Input Styles */
 input[type="file"],
 input[type="text"],
 select {
@@ -27,6 +45,7 @@ select {
   margin-bottom: 10px;
 }
 
+/* Textarea Styles */
 textarea {
   padding: 8px;
   width: 300px;
@@ -34,12 +53,14 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* Submit Button Styles */
 input[type="submit"] {
   background-color: darkblue;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 input[type="submit"]:hover {

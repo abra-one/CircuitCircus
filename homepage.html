@@ -6,190 +6,12 @@
 
   <!-- References -->
   <link rel="stylesheet" href="barstyle.css">
+  <link rel="stylesheet" href="homepage-styles.css">
 
-
-  <style>
-    /* CSS styles for the layout */
-    body {
-      margin: 0;
-      padding: 0;
-      margin-top: 70px;
-    }
-
-    .header {
-      height: 55px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #360aaf;
-
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 100;
-      border-bottom: 1px solid black;
-    }
-
-    .footer {
-      height: 55px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #360aaf;
-
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: 100;
-      border-top: 1px solid black;
-    }
-
-    .left-section {
-      margin-left: 20px;
-    }
-
-    .middle-section {
-      flex: 1;
-      margin-left: 20px;
-      margin-right: 20px;
-      max-width: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .right-section {
-      width: 180px;
-      margin-right: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-
-
-
-    
-    .icon-container {
-      display: flex;
-    }
-
-    .icon {
-      margin-right: 10px;
-    }
-
-    .title {
-      display: inline-block;
-      border-radius: 20px;
-      background-color: #eaeaea;
-      padding: 10px 20px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: #333333;
-    }
-
-    .logo {
-      display: inline-block;
-      border-radius: 50%;
-      background-color: #eaeaea;
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: #333333
-    }
-
-    /* Grid Styles */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      padding: 20px;
-      overflow-y: auto;
-      margin-top: 70px;
-    }
-
-    .product-container {
-      border: 1px solid gray;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 250px;
-      background-color: rgb(250, 249, 239);
-    }
-
-    .product-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .product-title {
-      font-weight: bold;
-      text-align: center;
-    }
-
-    /* Trim Styles */
-    .trim-right {
-      display: flex;
-      position: fixed;
-      height: 900px;
-      width: 12px;
-
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 50;
-      background-color: darksalmon;
-    }
-
-    .trim-left {
-      display: flex;
-      position: fixed;
-      height: 900px;
-      width: 12px;
-
-      top: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 50;
-      background-color: darksalmon;
-    }
-
-    /* Listing Button */
-    .listing-button {
-      display: flex;
-      position: fixed;
-      height: 85px;
-      width: 85px;
-      border-radius: 50%;
-      bottom: 70px;
-      right: 20px;
-      z-index: 200;
-      background-color: rgb(78, 120, 238);
-      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease;
-      border: 2px solid rgba(0, 0, 0, 0.2);
-    }
-
-    .listing-button:hover {
-      background-color: rgb(68, 106, 212);
-    }
-
-    .listing-button:active {
-      background-color: rgb(60, 90, 170);
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-      border: 2px solid rgba(0, 0, 0, 0.2);
-    }
-  </style>
 </head>
 
 <body>
+
   <!-- Utility Bar at the top of the page -->
   <!-- The icons here can be links to your profile, or forum and such-->
   <header class="header">
@@ -209,8 +31,7 @@
             <input type="text" placeholder="Search Items" name="q">
             <button type="submit" class="search-bar"><img src="images/images/search.png"></button>
         </form>
-    </div>
-      
+      </div>
     </div>
 
     <!-- Right Section Div-->
@@ -220,21 +41,28 @@
         <img src="icon2.png" alt="Icon 2">
       </div>
       <div class="icon">
-        <!-- third icon here -->
+        <!-- Third icon here -->
         <img src="icon3.png" alt="Icon 3">
       </div>
     </div>
   </header>
+  <!-- End of Header Utility Bar-->
 
   <!--Listing Button Circle at bottom-->
-  <button class="listing-button">
-  </butTon>
+  <a href="listingCreation.html">
+    <button class="listing-button">
+    </butTon>
+  </a>
+  
+
 
   <!--Edge trim-->
   <div class="trim-right">
   </div>
   <div class="trim-left">
   </div>
+
+
 
    <!-- Listing Grid -->
    <div class="product-grid">
@@ -371,7 +199,6 @@
 
   <footer>
       <div class="footer">
-
       </div>
   </footer>
 

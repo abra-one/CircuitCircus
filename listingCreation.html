@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Listing</title>
+  
+  <link rel="stylesheet" href="listingCreation-styles.css">
+
+</head>
+<body>
+  <a href="homepage.html">
+    <button class="Cancel-button">
+      Cancel
+    </button>
+  </a>
+ 
+  <h1 style = "color:#004080">Create Listing</h1>
+
+  <form action="submit_listing.php" method="post" enctype="multipart/form-data">
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" required>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+
+    <label for="condition">Condition:</label>
+    <select id="condition" name="condition" required>
+      <option value="new">New</option>
+      <option value="like_new">Like New</option>
+      <option value="used">Used</option>
+      <option value="fair">Fair</option>
+    </select>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <input type="submit" value="Create Listing">
+  </form>
+</body>
+</html>
