@@ -15,13 +15,12 @@
     <h1>Circuit Circus</h1>
 
     <!--Login Inputs for Username and Password-->
-    <input placeholder="Username">
-
-    <input placeholder="Password">
+    <input id="usernameInput" placeholder="Username">
+    <input id="passwordInput" placeholder="Password">
     
    
       <!-- Login Button -->
-      <a href="homepage.html">
+      <a id="loginButton">
         <button>
           Login
         </button>
@@ -37,6 +36,36 @@
     <!--Account Creation Prompt-->
     <p> Don't have an account? Create one!</p>
 
+
+
+    <script>
+
+      
+      // Function to handle the login button click
+      function handleLogin() {
+        // Get the input values
+        const username = document.getElementById("usernameInput").value;
+        const password = document.getElementById("passwordInput").value;
+        
+          if (username === "Bob.jones"){
+            alert("Error: Account does not Exist")
+            return;
+          }
+          // Check if the input values match the specified strings
+          if (username === "Bob.Jones" && password === "Password123") {
+            // If the input values match, set the login button's href to the desired page
+            document.getElementById("loginButton").href = "homepage.html";
+          } else {
+            // If the input values don't match, raise an alert
+            alert("Error: Username and Password don't match");
+          }
+      }
+   
+  
+     
+      // Attach the handleLogin function to the login button's click event
+      document.getElementById("loginButton").addEventListener("click", handleLogin);
+    </script>
 
   </body>
 </html>
