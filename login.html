@@ -15,7 +15,7 @@
     <h1>Circuit Circus</h1>
 
     <!--Login Inputs for Username and Password-->
-    <input id="usernameInput" placeholder="Username">
+    <input id="usernameInput" placeholder="Email">
     <input id="passwordInput" placeholder="Password">
     
    
@@ -47,12 +47,12 @@
         const username = document.getElementById("usernameInput").value;
         const password = document.getElementById("passwordInput").value;
         
-          if (username === "Bob.jones"){
+          if (username === "Bob.jones@gmail.com"){
             alert("Error: Account does not Exist")
             return;
           }
           // Check if the input values match the specified strings
-          if (username === "Bob.Jones" && password === "Password123") {
+          if (username === "Bob.Jones@gmail.com" && password === "Password123") {
             // If the input values match, set the login button's href to the desired page
             document.getElementById("loginButton").href = "homepage.html";
           } else {
