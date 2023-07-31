@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/barstyle.css">
-  <link rel="stylesheet" type="text/css" href="styles/forum-styles.css">
-  <title>Forum - Circuit Circus</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/barstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/forum-styles.css">
+    <title>Forum - Circuit Circus</title>
+  </head>
 
-<body>
-  <nav class="header">
-    <!-- LOGO -->
-    <div class="title">
-        <img src="logoicon.png" alt="Logo" class="logo">
+  <body>
+    <nav class="header">
+      <!-- LOGO -->
+      <div class="title">
+          <img src="logoicon.png" alt="Logo" class="logo">
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+
+          <form action="" class="search-bar">
+              <input type="text" placeholder="Search Items" name="q">
+              <button type="submit" class="search-bar"><img src="images/images/search.png"></button>
+          </form>
+          <li><a href="forum.html"><img src="forumicon.png"></a></li>
+          <li><a href="login.html"><img src="signinicon.png"></a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="writing-post">
+        <h2>Create a Post</h2>
+        <h3>Title Your Post</h3>
+        <textarea name="titleTextBox" cols="50" rows="1">
+            Title
+        </textarea>
+        <h3>Write Your Post</h3>
+        <textarea name="postTextBox" cols="50" rows="10">
+            Type your post here...
+        </textarea>
+
     </div>
 
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
-
-        <form action="" class="search-bar">
-            <input type="text"- placeholder="Search Items" name="q">
-            <button type="submit" class="search-bar"><img src="images/images/search.png"></button>
-        </form>
-        <li><a href="forum.html"><img src="forumicon.png"></a></li>
-        <li><a href="login.html"><img src="signinicon.png"></a></li>
-      </div>
-    </ul>
-
-
-
-
-    </nav>
-</body>
+  </body>
 
 </html>
