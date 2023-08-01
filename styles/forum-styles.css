@@ -142,6 +142,14 @@ body {
   padding: 20px;
 }
 
+.new-post {
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  line-height: 1.8;
+  padding: 20px;
+}
 
 .post-box1 {
   grid-area: post1;
@@ -159,7 +167,9 @@ body {
   grid-area: post4;
 }
 
-
+.main-body h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 .main-body h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }

@@ -127,6 +127,12 @@ body {
 /* Heading Styles */
 h1 {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 150px;
+}
+
+.questions {
+  margin-bottom: 300px;
 }
 
 /* Form Styles */
@@ -138,8 +144,10 @@ form {
 
 /* Label Styles */
 label {
-  color: #30415D;
+  color: #000;
   font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 /* Input Styles */
@@ -167,6 +175,15 @@ input[type="submit"] {
   border-radius: 50px;
   margin-bottom: 5px;
   margin-top: 10px;
+}
+
+.elephantpost {
+  display: flex;
+  position: fixed;
+  max-width: 150px;
+  bottom: 70px;
+  right: 20%;
+  z-index: 999;
 }
 
 input[type="submit"]:hover {

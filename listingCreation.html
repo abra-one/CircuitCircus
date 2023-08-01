@@ -7,14 +7,32 @@
 
 </head>
 <body>
-  <a href="homepage.html">
-    <button class="Cancel-button">
-      Cancel
-    </button>
-  </a>
+  
+  <nav class="header">
+    <!-- LOGO -->
+    <div class="title">
+        <a href="homepage.html"><img src="icons/logoicon.png" class="logo"></a>
+    </div>
 
- 
-  <h1 style = "color:#004080">Create Listing</h1>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search Items" name="q">
+            <button type="submit" class="search-bar"><img src="icons/search.png"></button>
+        </form>
+        <li><a href="forum.html"><img src="icons/forumicon.png" class="forum"></a></li>
+        <li><a href="login.html"><img src="icons/signinicon.png" class="signin"></a></li>
+      </div>
+    </ul>
+  
+  </nav>
+
+  <div class="main-body">
+  <h1 style = "color:#000">Create Listing</h1>
 
   <form action="#" method="post" enctype="multipart/form-data">
     <label for="image">Image:</label>
@@ -25,7 +43,7 @@
 
     <label for="description">Description:</label>
     <textarea id="description" name="description" rows="4" cols="50"></textarea>
-
+    <div class="questions">
     <label for="condition">Condition:</label>
     <select id="condition" name="condition" option>
       <option value="new">New</option>
@@ -36,16 +54,14 @@
 
     <label for="location">Location:</label>
     <input type="text" id="location" name="location">
-
+    </div>
     
 
    
   </form>
 
-  <a href = "homepage2.html"> <h1 style = "color:#004080">Submit!</h1> </a>
+  <a href="homepage2.html"><img src="icons/elephantpost.png" class="elephantpost"></a>
   
-
-
-
+</div>
 </body>
 </html>

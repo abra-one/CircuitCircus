@@ -5,67 +5,41 @@
   <title>Homepage</title>
 
   <!-- References -->
-  <link rel="stylesheet" href="styles/barstyle.css">
+
   <link rel="stylesheet" href="styles/homepage-styles.css">
 
 </head>
 
 <body>
 
-  <!-- Utility Bar at the top of the page -->
-  <!-- The icons here can be links to your profile, or forum and such-->
-  <header class="header">
-    <!-- Left Icon Div -->
-    <div class="left-section">
-  
-      <div class="title">
-        <!-- First icon here -->
-          Circuit Circus
-      </div>
+  <nav class="header">
+    <!-- LOGO -->
+    <div class="title">
+        <a href="homepage.html"><img src="icons/logoicon.png" class="logo"></a>
     </div>
 
-    <!-- Middle Section Div-->
-    <div class="middle-section">
-      <div>
-        <form action="homepage_searched.html" class="search-bar">
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <form action="" class="search-bar">
             <input type="text" placeholder="Search Items" name="q">
             <button type="submit" class="search-bar"><img src="icons/search.png"></button>
         </form>
+        <li><a href="forum.html"><img src="icons/forumicon.png" class="forum"></a></li>
+        <li><a href="login.html"><img src="icons/signinicon.png" class="signin"></a></li>
       </div>
-    </div>
-
-    <!-- Right Section Div-->
-    <div class="right-section">
-      <div class="icon">
-        <!-- Second icon here -->
-        <img class = "icon-picture" src="icons/menu.png" alt="Icon 2">
-      </div>
-
-      <div class="icon">
-        <!-- Third icon here -->
-        <a href="profile.html">
-          <img class="icon-picture" src="icons/ProfilePicture.png" alt="Icon 3">
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- End of Header Utility Bar-->
-
-  <!--Listing Button Circle at bottom-->
-  <a href="listingCreation.html">
-    <button class="listing-button">
-    </butTon>
-  </a>
+    </ul>
   
+  </nav>
 
-
-  <!--Edge trim-->
-  <div class="trim-right">
-  </div>
-  <div class="trim-left">
-  </div>
-
-
+  <div class="main-body">
+    <!--Listing Button Circle at bottom-->
+    <a href="listingCreation.html">
+      <img src="icons/listingicon.png" class="newlisting">
+    </a>
 
    <!-- Listing Grid -->
 
@@ -74,7 +48,7 @@
 
     <div class="product-container">
       <a href="exampleListing.html">
-      <img class="asus-laptop" src="icons/exampleListingPicture.jpg" alt="Product 1">
+      <img class="asus-laptop" src="exampleListingPicture.jpg" alt="Product 1">
       </a>
       <h3 class="product-title">Asus Monitor</h3>
     </div>
@@ -234,11 +208,6 @@
     </div>
      <!-- Add more product containers here -->
   </div>
-
-  <footer>
-      <div class="footer">
-      </div>
-  </footer>
-
+</div>
 </body>
 </html>
