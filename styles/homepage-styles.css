@@ -104,11 +104,20 @@ body {
   width: 50%;
   height: auto;
   margin-bottom: 10px;
+  align-self: center;
 }
 
 .product-title {
   font-weight: bold;
   text-align: center;
+}
+
+.asus-laptop{
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  align-self: center;
+  margin-left: 25%;
 }
 
 
