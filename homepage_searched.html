@@ -5,13 +5,12 @@
   <title>Homepage</title>
 
   <!-- References -->
-
   <link rel="stylesheet" href="styles/homepage-styles.css">
+  <link rel="stylesheet" href="styles/barstyle.css">
 
 </head>
 
 <body>
-
   <nav class="header">
     <!-- LOGO -->
     <div class="title">
@@ -24,9 +23,9 @@
       <!-- NAVIGATION MENUS -->
       <div class="menu">
 
-        <form action="" class="search-bar">
+        <form action="homepage_searched.html" class="search-bar">
             <input type="text" placeholder="Search Items" name="q">
-            <button type="submit" cl                                                                                                                                                                             ass="search-bar"><img src="icons/search.png"></button>
+            <button type="submit" class="search-bar"><img src="icons/search.png"></button>
         </form>
         <li><a href="forum.html"><img src="icons/forumicon.png" class="forum"></a></li>
         <li><a href="login.html"><img src="icons/signinicon.png" class="signin"></a></li>
@@ -36,34 +35,45 @@
   </nav>
 
   <div class="main-body">
-  <!--Listing Button Circle at bottom-->
-  <a href="listingCreation.html">
-    <img src="icons/listingicon.png" class="newlisting">
-  </a>
-  
-
-   <!-- Listing Grid -->
-
-   <div class="product-grid">
+    <!--Listing Button Circle at bottom-->
+    <a href="listingCreation.html">
+      <img src="icons/listingicon.png" class="newlisting">
+    </a>
 
 
-    <div class="product-container">
-      <a href="exampleListing.html">
-      <img class="asus-laptop" src="exampleListingPicture.jpg" alt="Product 1">
-      </a>
-      <h3 class="product-title">Asus Monitor</h3>
+    <!-- Listing Grid -->
+
+    <div class="product-grid">
+
+
+
+
+
+      <div class="product-container">
+        <a href="exampleListing.html">
+        <img class="asus-laptop" src="exampleListingPicture.jpg" alt="Product 1">
+        </a>
+        <h3 class="product-title"> Asus Monitor</h3>
+      </div>
+
+
+      
+      <div class="product-container">
+        <img class="product-image" src="icons/listingImage.png" alt="Product 1">
+        <h3 class="product-title">Monitor</h3>
+      </div>
+      <div class="product-container">
+        <img class="product-image" src="icons/listingImage.png" alt="Product 1">
+        <h3 class="product-title">Monitor</h3>
+      </div>
+      <!-- Add more product containers here -->
     </div>
-    <div class="product-container">
-      <img class="product-image" src="icons/listingImage.png" alt="Product 1">
-      <h3 class="product-title">Monitor</h3>
-    </div>
-    <div class="product-container">
-      <img class="product-image" src="icons/listingImage.png" alt="Product 1">
-      <h3 class="product-title">Monitor</h3>
-    </div>
-     <!-- Add more product containers here -->
+
+    <footer>
+        <div class="footer">
+        </div>
+    </footer>
+
   </div>
-
-</div>
 </body>
 </html>
