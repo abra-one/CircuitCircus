@@ -132,6 +132,7 @@ body {
 }
 
 
+
 .post-box1, .post-box2, .post-box3, .post-box4 {
   border-radius: 10px;
   width: 100%;
@@ -173,10 +174,17 @@ body {
 }
 
 /*CREATE POST*/
-.createpost {
+.createpost, .elephantpost {
   position: absolute;
   max-width: 150px;
   bottom: 100px;
   right: 20px;
   z-index: 999;
+}
+
+.writing-post {
+  margin-top:100px;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
 }
