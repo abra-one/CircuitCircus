@@ -7,7 +7,25 @@
 }
 
 body {
-  font-family: cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 a {
@@ -60,4 +78,4 @@ li {
 /*CREATE POST*/
 .create-post {
   position: absolute;
-  
+}
