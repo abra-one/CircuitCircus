@@ -51,6 +51,11 @@
     margin-right: 5px;
   }
   
+  .account {
+    max-width: 70px;
+    margin-right: 5px;
+  }
+  
   
   .search-bar{
     width: calc(100% - 370px);
