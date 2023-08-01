@@ -185,10 +185,11 @@ body {
 
 /*CREATE POST*/
 .createpost, .elephantpost {
-  position: absolute;
+  display: flex;
+  position: fixed;
   max-width: 150px;
-  bottom: 100px;
-  right: 20px;
+  bottom: 70px;
+  right: 20%;
   z-index: 999;
 }
 
