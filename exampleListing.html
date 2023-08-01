@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>24" Asus Monitor </title>
+  
+  <link rel="stylesheet" href="styles/listingCreation-styles.css">
+
+</head>
+<body>
+  <a href="homepage.html">
+    <button class="Cancel-button">
+      Cancel
+    </button>
+  </a>
+ 
+  <h1 style = "color:#004080">24" Asus Monitor</h1>
+
+  <form action="submit_listing.php" method="post" enctype="multipart/form-data">
+    
+    <img src="exampleListingPicture.jpg" alt="Asus Monitor" width="500" height="500">
+
+    
+    
+
+    <label for="description">Description:</label>
+    
+    <p style="color:#000000">I found this monitor in my dad's basement. No serial number on it. Backlight appears to be broken but the panel still works.</p>
+
+    <label for="condition">Condition:</label>
+    <p style="color:#000000">Used</p>
+
+    <label for="location">Location:</label>
+    <p style="color:#000000">Greater Cincinnati, OH</p>
+
+    <label for="message">Message Owner:</label>
+    <input class="account-input" placeholder="Enter message here">  <button class="Cancel-button" onclick="myFunction()">Send message</button>
+
+<script>
+function myFunction() {
+  alert("Message Sent!")
+
+}
+</script>
+  
+</body>
+</html>
