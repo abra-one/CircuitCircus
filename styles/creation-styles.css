@@ -54,7 +54,7 @@ li {
 
 
 .search-bar{
-  width: calc(100%-370px);
+  width: calc(100% - 370px);
   background-color: #8EAEBD;
   display: flex;
   flex: 1;
